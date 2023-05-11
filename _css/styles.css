@@ -7,7 +7,7 @@
 }
 
 .card .card-img-top {
-    height: 200px;
+    height: 100px;
     object-fit: cover;
 }
 
@@ -62,7 +62,7 @@
 
 /* CSS for the body */
 body {
-    background-color: rgb(203, 63, 245);
+    background-color: rgb(63, 245, 193);
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
