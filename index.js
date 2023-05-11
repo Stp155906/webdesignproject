@@ -1,33 +1,37 @@
-const supabaseUrl = '<YOUR_SUPABASE_URL>';
-const supabaseKey = '<YOUR_SUPABASE_API_KEY>';
+const supabaseUrl = 'https://yrefzqsczilbqtlpqmfy.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlyZWZ6cXNjemlsYnF0bHBxbWZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODMzMDY1OTAsImV4cCI6MTk5ODg4MjU5MH0._G4GiXf_K4sVcZA6Mbyiri6wOuUysz0fGYklIqV6hAw';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-supabase
+const { createClient } = require('@supabase/supabase-js')
+
+
+const herbsSubscription = supabase
   .from('herbs')
-  .select('*')
-  .then((response) => {
-    const herbs = response.data;
-    // call function to render herb cards with data
+  .on('INSERT', (payload) => {
+    // Update UI with new data
+    console.log(payload.new);
   })
-  .catch((error) => console.log(error));
-  function renderHerbCards(herbs) {
-    const container = document.getElementById('herb-cards');
-    container.innerHTML = '';
-  
-    herbs.forEach((herb) => {
-      const card = `
-        <div class="card">
-          <img src="${herb.image_url}" class="card-img-top" alt="${herb.name}">
-          <div class="card-body">
-            <h5 class="card-title">${herb.name}</h5>
-          </div>
+  .subscribe();
+
+function renderHerbCards(herbs) {
+  const container = document.getElementById('herb-cards');
+  container.innerHTML = '';
+
+  herbs.forEach((herb) => {
+    const card = `
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">${herb.name}</h5>
+          <p class="card-text">${herb.description}</p>
         </div>
-      `;
-  
-      container.innerHTML += card;
-    });
-  }
-  supabase
+      </div>
+    `;
+
+    container.insertAdjacentHTML('beforeend', card);
+  });
+}
+
+supabase
   .from('herbs')
   .select('*')
   .then((response) => {
