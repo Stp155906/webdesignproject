@@ -4,6 +4,9 @@
 .hero-container {
     position: relative;
     height: 100vh;
+    /* this i added */
+    width: 1056px;
+
     /* overflow: hidden; */
     overflow:auto;
     padding: 20px;
