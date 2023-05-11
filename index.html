@@ -70,7 +70,15 @@
                             should be accessible and fun for everyone. Join us on this journey towards a healthier, happier you!
                         </p>
                     </div>
-                    <div id="herb-cards"></div>
+                    <div id="herb-cards">
+                        <div class="card">
+                            <img class="card-img-top" src="/_images/3A186AF8-7497-4987-86D9-3EB1F32FA5FC.JPG" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Card text</p>
+                            </div>
+                        </div> 
+                    </div>
 
                     
                     
@@ -82,6 +90,21 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.24.0"></script>
     <script src="index.js"></script>
+    
+    
+    <script>
+        const herbCard = document.createElement('div');
+        herbCard.classList.add('card');
+        herbCard.innerHTML = `
+            <img class="card-img-top" src="image-url" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Card text</p>
+            </div>
+        `;
+        document.getElementById('herb-cards').appendChild(herbCard);
+    </script>
+    
 
 </body>
 

@@ -1,8 +1,15 @@
+// Initialize the JS client
+import { createClient } from '@supabase/supabase-js'
 const supabaseUrl = 'https://yrefzqsczilbqtlpqmfy.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlyZWZ6cXNjemlsYnF0bHBxbWZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODMzMDY1OTAsImV4cCI6MTk5ODg4MjU5MH0._G4GiXf_K4sVcZA6Mbyiri6wOuUysz0fGYklIqV6hAw';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+
+// Make a request
+const { data: todos, error } = await supabase.from('herbs').select('*')
+
 const { createClient } = require('@supabase/supabase-js')
+
 
 
 const herbsSubscription = supabase
