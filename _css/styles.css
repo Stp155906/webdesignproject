@@ -18,6 +18,9 @@
     border-radius: 20px;
     background: #FFFFFF;
     background: url(/_images/figmaMain.png);
+    background-size: cover;
+    background-position: center;
+    
 
     /* object-fit: cover; */
     /* z-index: -1; */
