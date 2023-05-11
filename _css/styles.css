@@ -17,7 +17,7 @@
     mix-blend-mode: normal;
     border-radius: 20px;
     background: #FFFFFF;
-    background: url(/_images/figmaMain.png);
+    /* background: url(/_images/figmaMain.png); */
 
     /* object-fit: cover; */
     /* z-index: -1; */
