@@ -23,7 +23,6 @@
 
 <body>
     <header>
-       
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -34,73 +33,79 @@
             </ul>
         </nav>
     </header>
-    <hr>
+
     <main>
-        <section class="bg-container" id="home">
-            <section class="bg-image">
-                <img src="_Images/home.JPG" alt="Background image">
-
-                <section class="opening">
-                    
-                </section>
+        <section class="hero-container" id="home">
+            <section class="hero-image">
+                <div class="hero-overlay"></div>
+                <img src="/_images/figmaMain.png" alt="Figma Main">
+                <div class="hero-text">
+                    <!-- Hero text content goes here -->
+                    TEST
+                </div>
             </section>
-            
         </section>
+
+
+
         <div class="container-description">
-                        <p> Testing </p>
-                        <hr>
+            <p> Testing </p>
+            <hr>
 
-                        <p>The ultimate social media platform for natural wellness enthusiasts! Join our vibrant community of
-                            herbal
-                            tea lovers and discover the power of herbal blends that can help you achieve your health goals.
-                            Create
-                            your own unique blends using our intuitive platform, and share them with the world. Explore a
-                            diverse
-                            collection of herbal tea blends, each carefully crafted by our users to provide a range of benefits,
-                            from stress relief to digestion aid. Connect with other like-minded individuals, exchange tips and
-                            advice, and gain inspiration for your next blend. Our platform also provides access to scientific
-                            research studies related to the health benefits of each ingredient, so you can make informed
-                            decisions
-                            about what goes into your blends. Shop our store for high-quality ingredients, brewing equipment,
-                            and
-                            accessories to enhance your herbal tea experience. At Herbiology, we believe that natural wellness
-                            should be accessible and fun for everyone. Join us on this journey towards a healthier, happier you!
-                        </p>
+            <p>The ultimate social media platform for natural wellness enthusiasts! Join our vibrant community of
+                herbal
+                tea lovers and discover the power of herbal blends that can help you achieve your health goals.
+                Create
+                your own unique blends using our intuitive platform, and share them with the world. Explore a
+                diverse
+                collection of herbal tea blends, each carefully crafted by our users to provide a range of benefits,
+                from stress relief to digestion aid. Connect with other like-minded individuals, exchange tips and
+                advice, and gain inspiration for your next blend. Our platform also provides access to scientific
+                research studies related to the health benefits of each ingredient, so you can make informed
+                decisions
+                about what goes into your blends. Shop our store for high-quality ingredients, brewing equipment,
+                and
+                accessories to enhance your herbal tea experience. At Herbiology, we believe that natural wellness
+                should be accessible and fun for everyone. Join us on this journey towards a healthier, happier you!
+            </p>
+        </div>
+        <p>Testing to see if herb cards pull up here</p>
+        <div class="row" id="herb-cards">
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/_images/3A186AF8-7497-4987-86D9-3EB1F32FA5FC.JPG"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Card text</p>
                     </div>
-                    <p>Testing to see if herb cards pull up here</p>
-                    <div class="row" id="herb-cards">
-                      <div class="col-sm-4">
-                        <div class="card">
-                          <img class="card-img-top" src="/_images/3A186AF8-7497-4987-86D9-3EB1F32FA5FC.JPG" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Card text</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="card">
-                          <img class="card-img-top" src="/_images/3A186AF8-7497-4987-86D9-3EB1F32FA5FC.JPG" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Card text</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="card">
-                          <img class="card-img-top" src="/_images/3A186AF8-7497-4987-86D9-3EB1F32FA5FC.JPG" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Card text</p>
-                          </div>
-                        </div>
-                      </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/_images/3A186AF8-7497-4987-86D9-3EB1F32FA5FC.JPG"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Card text</p>
                     </div>
-                    
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/_images/3A186AF8-7497-4987-86D9-3EB1F32FA5FC.JPG"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Card text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    
-                    
+
+
+
 
     </main>
 
@@ -109,8 +114,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.24.0"></script>
     <script src="index.js"></script>
-    
-    
+
+
     <script>
         const herbCard = document.createElement('div');
         herbCard.classList.add('card');
@@ -123,7 +128,7 @@
         `;
         document.getElementById('herb-cards').appendChild(herbCard);
     </script>
-    
+
 
 </body>
 
