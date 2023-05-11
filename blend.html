@@ -39,7 +39,7 @@
     <main>
         <section class="bg-container" id="blend">
             <div class="bg-image">
-              <img src="_images/blend.JPG"About Background Image">
+                <img src="_images/blend.JPG" About Background Image">
             </div>
         </section>
         <section class="container-description">
@@ -55,6 +55,7 @@
 
         <section class="container-description">
 
+            <div class="form-container">
 
 
                 <label for="blend-name">Blend Name:</label>
@@ -69,50 +70,51 @@
                 <input type="text" id="health-benefits" name="health-benefits"><br><br>
 
                 <button type="submit" class="btn btn-primary">Create Blend</button>
-            </form>
+                </form>
+            </div>
         </section>
 
 
 
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Blend Name</th>
-                        <th>Ingredients</th>
-                        <th>Description</th>
-                        <th>Health Benefits</th>
-                    </tr>
-                </thead>
-                <tbody id="blends-table">
-                </tbody>
-            </table>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Blend Name</th>
+                    <th>Ingredients</th>
+                    <th>Description</th>
+                    <th>Health Benefits</th>
+                </tr>
+            </thead>
+            <tbody id="blends-table">
+            </tbody>
+        </table>
 
 
 
 
-            <script>
-                const form = document.getElementById('blend-form');
-                form.addEventListener('submit', function (event) {
-                    event.preventDefault();
-                    const name = document.getElementById('blend-name').value;
-                    const ingredients = document.getElementById('ingredients').value;
-                    const description = document.getElementById('description').value;
-                    const benefits = document.getElementById('health-benefits').value;
-                    const table = document.getElementById('blends-table');
-                    const row = table.insertRow(-1);
-                    const nameCell = row.insertCell(0);
-                    const ingredientsCell = row.insertCell(1);
-                    const descriptionCell = row.insertCell(2);
-                    const benefitsCell = row.insertCell(3);
-                    nameCell.innerText = name;
-                    ingredientsCell.innerText = ingredients;
-                    descriptionCell.innerText = description;
-                    benefitsCell.innerText = benefits;
-                    form.reset();
-                });
+        <script>
+            const form = document.getElementById('blend-form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const name = document.getElementById('blend-name').value;
+                const ingredients = document.getElementById('ingredients').value;
+                const description = document.getElementById('description').value;
+                const benefits = document.getElementById('health-benefits').value;
+                const table = document.getElementById('blends-table');
+                const row = table.insertRow(-1);
+                const nameCell = row.insertCell(0);
+                const ingredientsCell = row.insertCell(1);
+                const descriptionCell = row.insertCell(2);
+                const benefitsCell = row.insertCell(3);
+                nameCell.innerText = name;
+                ingredientsCell.innerText = ingredients;
+                descriptionCell.innerText = description;
+                benefitsCell.innerText = benefits;
+                form.reset();
+            });
 
-                
-            </script>
+
+        </script>
         </section>
     </main>
 

@@ -387,4 +387,33 @@ footer {
       }
   }
 
-  
+  /* Styles for a form container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    }
+    
+    /* Styles for labels in form container */
+    .form-container label {
+    display: block;
+    text-align: center;
+    }
+    
+    /* Styles for text input and textarea in form container */
+    .form-container input[type="text"],
+    .form-container textarea {
+    width: 100%;
+    max-width: 30rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    }
+    
+    /* Styles for submit button in form container */
+    .form-container button[type="submit"] {
+    width: 100%;
+    max-width: 10rem;
+    align-self: flex-end;
+    }
