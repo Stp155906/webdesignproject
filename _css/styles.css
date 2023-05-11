@@ -14,9 +14,11 @@
     
     width: 449px;
     height: 549px;
+    mix-blend-mode: normal;
+    border-radius: 20px;
 
-    object-fit: cover;
-    z-index: -1;
+    /* object-fit: cover; */
+    /* z-index: -1; */
   }
   
   
