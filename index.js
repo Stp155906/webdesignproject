@@ -46,3 +46,24 @@ supabase
     renderHerbCards(herbs);
   })
   .catch((error) => console.log(error));
+
+  function renderCard(herb) {
+    const card = document.createElement('div');
+    card.classList.add('card');
+  
+    const cardImage = document.createElement('img');
+    cardImage.src = herb.image_url;
+    cardImage.alt = herb.name;
+    card.appendChild(cardImage);
+  
+    const cardTitle = document.createElement('h2');
+    cardTitle.innerText = herb.name; // Display the name of the herb as card title
+    card.appendChild(cardTitle);
+  
+    const cardText = document.createElement('p');
+    cardText.innerText = herb.description;
+    card.appendChild(cardText);
+  
+    return card;
+  }
+  
