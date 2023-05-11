@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="284" fill="none" viewBox="0 0 220 284">
+  <g filter="url(#a)">
+    <path fill="url(#b)" d="M52 20h116v180H52z" shape-rendering="crispEdges"/>
+  </g>
+  <defs>
+    <pattern id="b" width="1" height="1" patternContentUnits="objectBoundingBox">
+      <use xlink:href="#c" transform="matrix(.0021 0 0 .00135 -.001 0)"/>
+    </pattern>
+    <filter id="a" width="220" height="284" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feMorphology in="SourceAlpha" radius="12" result="effect1_dropShadow_110_972"/>
+      <feOffset dy="32"/>
+      <feGaussianBlur stdDeviation="32"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_110_972"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_110_972" result="shape"/>
+    </filter>
+  </defs>
+</svg>
