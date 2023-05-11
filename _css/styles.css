@@ -95,6 +95,7 @@
 .card .card-img-top {
     height: 225px;
     object-fit: cover;
+    position: relative;
 }
 
 .card .card-body {
