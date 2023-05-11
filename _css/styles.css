@@ -1,19 +1,5 @@
 
 /* Font Styling */
-h1 {
-    position: absolute;
-    width: 474.12px;
-    height: 67px;
-    font-family: 'Questrial', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 85px;
-    line-height: 95px;
-    letter-spacing: -2px;
-    color: #121212;
-  }
-  
-
 
 
 /* Style for the hero image container */
@@ -26,6 +12,7 @@ h1 {
     /* overflow: hidden; */
     overflow:auto;
     padding: 20px;
+    border-radius: 10px;
   }
   
 .hero-image {
@@ -40,7 +27,7 @@ h1 {
     background-size: cover;
     background-position: center;
     
-
+    
     /* object-fit: cover; */
     /* z-index: -1; */
   }
@@ -54,6 +41,10 @@ h1 {
     background: linear-gradient(180deg, #9FDACF 0%, rgba(230, 238, 237, 0.44) 100%);
     mix-blend-mode: normal;
     border-radius: 20px;
+    margin-right: 40px;
+    padding: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
   
   /* Style for the hero text container */
@@ -65,14 +56,30 @@ h1 {
     width: 50%; /* Adjust to your liking */
     padding: 20px; /* Adjust to your liking */
     background-color: #fff; /* Use any color you like */
-
+    
     font-family: 'Rhodium Libre';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 43px;
+
   }
   
+  h1 {
+    /* position: absolute; */
+    padding:10px;
+    /* width: 474.12px;
+    height: 67px; */
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 95px;
+    letter-spacing: -2px;
+    color: #121212;
+  }
+  
+
 
 
 
