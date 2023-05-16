@@ -397,6 +397,7 @@ footer{
     /* Resize hero text container */
     .hero-text {
         text-align: center;
+        
       }
       
       .hero-text h1 {
@@ -475,6 +476,7 @@ footer{
     /* Resize hero text container */
     .hero-text {
         text-align: center;
+        position: relative;
       }
       
       .hero-text h1 {
