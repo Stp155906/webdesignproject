@@ -1,18 +1,18 @@
 
-
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 /* Style for the hero image container */
 .hero-container {
-    position: relative;
-    height: 100vh;
-    /* this i added */
-    /* width: 1056px; */
-
-    /* overflow: hidden; */
-    overflow:auto;
-    padding: 20px;
-    border-radius: 10px;
+    flex: 0 0 50%;
+    /* Add any other necessary styles */
   }
-  
+
+  .container-description {
+    flex: 0 0 50%;
+    /* Add any other necessary styles */
+  }
 .hero-image {
     position: absolute;
     
@@ -408,6 +408,15 @@ footer{
     .card .card-img-top {
         height: 200px;
     }
+    .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-container,
+      .container-description {
+        flex: 100%;
+      }
 }
 
 /* CSS for tablet devices */
