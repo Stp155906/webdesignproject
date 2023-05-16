@@ -407,12 +407,12 @@ footer{
 /* CSS for tablet devices */
 @media (min-width: 768px) and (max-width: 991px) {
     /* Resize hero image */
-    .hero-image, .hero-overlay {
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-      }
+    .hero-image,
+    .hero-overlay {
+      width: 100vw;
+      height: auto;
+      margin: 0;
+    }
   
     /* Resize hero text container */
     .hero-text {
