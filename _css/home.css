@@ -83,6 +83,8 @@
 
   .card-container {
     display: flex;
+    margin-bottom: 30px;
+    padding: 20px;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
