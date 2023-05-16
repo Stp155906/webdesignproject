@@ -357,6 +357,85 @@ footer{
 
 
 
+
+
+/* CSS for tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Resize hero image */
+    .hero-image {
+        position: absolute;
+
+        width: 400px;
+        height: 500px;
+        mix-blend-mode: normal;
+        border-radius: 15px;
+        background: #FFFFFF;
+        background: url(/_images/figmaMain.png);
+        background-size: cover;
+        background-position: center;
+
+        margin-left: 60px;
+        margin-top: 60px;
+        /* object-fit: cover; */
+        /* z-index: -1; */
+      }
+
+      /* Style for the hero image overlay */
+    .hero-overlay {
+        position: absolute;
+        width: 274px;
+        height: 349px;
+        background: linear-gradient(180deg, #9FDACF 0%, rgba(230, 238, 237, 0.44) 100%);
+        mix-blend-mode: normal;
+        border-radius: 20px;
+        margin-right: 40px;
+        padding: 30px;
+        margin-left: 30px;
+        margin-top: 30px;
+      }
+  
+    /* Resize hero text container */
+    .hero-text {
+        text-align: center;
+      }
+      
+      .hero-text h1 {
+        font-size: 24px;
+      }
+      
+      .hero-text p {
+        font-size: 16px;
+      }
+  
+    /* Resize card container */
+    .card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  
+    /* Resize cards */
+    .card {
+        flex: 0 0 calc(33.3333% - 20px);
+        margin: 10px;
+    }
+  
+    /* Remove margin-right on last card in each row */
+    .card-container .card:nth-child(3n+3) {
+        margin-right: 0;
+    }
+  
+    /* Resize card image */
+    .card .card-img-top {
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+
 /*----------------------------------*/
 /* CSS for mobile devices */
 @media (max-width: 767px) {
@@ -364,8 +443,8 @@ footer{
     .hero-image {
         position: absolute;
 
-        width: 249px;
-        height: 349px;
+        width: 349px;
+        height: 449px;
         mix-blend-mode: normal;
         border-radius: 15px;
         background: #FFFFFF;
@@ -429,73 +508,3 @@ footer{
     }
 }
 
-/* CSS for tablet devices */
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Resize hero image */
-    .hero-image {
-        position: absolute;
-
-        width: 249px;
-        height: 349px;
-        mix-blend-mode: normal;
-        border-radius: 15px;
-        background: #FFFFFF;
-        background: url(/_images/figmaMain.png);
-        background-size: cover;
-        background-position: center;
-
-        margin-left: 60px;
-        margin-top: 60px;
-        /* object-fit: cover; */
-        /* z-index: -1; */
-      }
-
-      /* Style for the hero image overlay */
-    .hero-overlay {
-        position: absolute;
-        width: 274px;
-        height: 349px;
-        background: linear-gradient(180deg, #9FDACF 0%, rgba(230, 238, 237, 0.44) 100%);
-        mix-blend-mode: normal;
-        border-radius: 20px;
-        margin-right: 40px;
-        padding: 30px;
-        margin-left: 30px;
-        margin-top: 30px;
-      }
-  
-    /* Resize hero text container */
-    .hero-text {
-        text-align: center;
-      }
-      
-      .hero-text h1 {
-        font-size: 24px;
-      }
-      
-      .hero-text p {
-        font-size: 16px;
-      }
-  
-    /* Resize card container */
-    .card-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-  
-    /* Resize cards */
-    .card {
-        flex: 0 0 calc(33.3333% - 20px);
-        margin: 10px;
-    }
-  
-    /* Remove margin-right on last card in each row */
-    .card-container .card:nth-child(3n+3) {
-        margin-right: 0;
-    }
-  
-    /* Resize card image */
-    .card .card-img-top {
-        height: 250px;
-    }
-}
