@@ -370,7 +370,7 @@ footer{
         mix-blend-mode: normal;
         border-radius: 15px;
         background: #FFFFFF;
-        background: url(/_images/figmaMain.png);
+        /* background: url(/_images/figmaMain.png); */
         background-size: cover;
         background-position: center;
 
@@ -449,7 +449,7 @@ footer{
         mix-blend-mode: normal;
         border-radius: 15px;
         background: #FFFFFF;
-        background: url(/_images/figmaMain.png);
+        /* background: url(/_images/figmaMain.png); */
         background-size: cover;
         background-position: center;
 
