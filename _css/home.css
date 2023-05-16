@@ -361,21 +361,12 @@ footer{
 /* CSS for mobile devices */
 @media (max-width: 767px) {
     /* Resize hero image */
-    .hero-image {
+    .hero-image, .hero-overlay {
+        position: relative;
         width: 100%;
         height: auto;
-        margin-left: 0;
-        margin-top: 0;
-    }
-  
-    /* Resize hero overlay */
-    .hero-overlay {
-        width: 100%;
-        height: auto;
-        margin-right: 0;
-        margin-left: 0;
-        margin-top: 0;
-    }
+        margin: 0 auto;
+      }
   
     /* Resize hero text container */
     .hero-text {
@@ -413,21 +404,12 @@ footer{
 /* CSS for tablet devices */
 @media (min-width: 768px) and (max-width: 991px) {
     /* Resize hero image */
-    .hero-image {
+    .hero-image, .hero-overlay {
+        position: relative;
         width: 100%;
         height: auto;
-        margin-left: 0;
-        margin-top: 0;
-    }
-  
-    /* Resize hero overlay */
-    .hero-overlay {
-        width: 100%;
-        height: auto;
-        margin-right: 0;
-        margin-left: 0;
-        margin-top: 0;
-    }
+        margin: 0 auto;
+      }
   
     /* Resize hero text container */
     .hero-text {
