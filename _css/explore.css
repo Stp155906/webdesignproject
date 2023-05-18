@@ -1,6 +1,9 @@
 
 h3{
     text-align: center;
+    padding:20px;
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
 }
 
 h1 {
@@ -31,7 +34,8 @@ h1 {
     flex: 0 0 auto;
     width: 100px;
     scroll-snap-align: start;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    align-items: center;
     text-align: center;
 
   }
