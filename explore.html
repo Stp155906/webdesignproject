@@ -75,21 +75,16 @@
 
       <hr>
       <section>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="/path/to/image.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Card text</p>
-                <div class="social-icons">
-                  <span class="like-icon"><i class="fas fa-heart"></i></span>
-                  <span class="save-icon"><i class="fas fa-bookmark"></i></span>
-                  <span class="share-icon"><i class="fas fa-share"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(function () {
+            $(".card-component-placeholder").load("card-component.html", function() {
+              // Once the card-component.html is loaded, you can perform any additional logic or modifications here.
+              // For example, you can add event listeners or manipulate the loaded content.
+            });
+          });
+        </script>
+        
           
           <!-- Add more card components as needed -->
           
