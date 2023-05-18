@@ -1,4 +1,19 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+  }
 
+  td {
+    padding: 10px;
+    border: none;
+  }
+
+  /* Target only the image within the table of the footer */
+  table.footer-table img {
+    max-width: 100%;
+    height: auto;
+  }
 
 /* Style for the hero image container */
 .hero-container {
