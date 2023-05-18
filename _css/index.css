@@ -271,8 +271,8 @@ td {
 
 /* Header Styling */
 header {
-    background-image: url("index-background.jpg");
-    background-size: cover;
+    /* background-image: url("index-background.jpg"); */
+    /* background-size: cover; */
     height: 70px;
 }
 
