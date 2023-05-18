@@ -33,7 +33,7 @@
 
     <h1>Explore</h1>
 
-    <h3> Check this week's trending herbal tea recipes! </h3>
+    <h3> Check this weeks trending herbal tea recipes! </h3>
     <section>
 
       <table class="story-container" style="margin: 0 auto;">
@@ -70,6 +70,7 @@
       </table>
       <hr>
       <!-- Add more story items as needed -->
+      </div>
       <hr>
 
       <h2>Herbiology Community</h2>
@@ -79,36 +80,64 @@
 
       <hr>
       <section>
-        <!-- Add a placeholder div for the card components -->
-        <div class="card-components-row"></div>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-          $(function () {
-            // Number of card components to display
-            var numCardComponents = 3;
-
-            // Load the card-component.html and create the desired number of card components
-            $(".card-component-placeholder").load("card-component.html", function () {
-              for (var i = 0; i < numCardComponents; i++) {
-                // Clone the loaded card component
-                var cardComponent = $(this).find(".card-component").clone();
-
-                // Append the cloned card component to the card-components-row
-                $(".card-components-row").append(cardComponent);
-              }
-
-              // Once the card components are loaded and appended, you can perform any additional logic or modifications here.
-              // For example, you can add event listeners or manipulate the loaded content.
-              // Example: Add a click event listener to the like-icon
-              $(".like-icon").on("click", function () {
-                // Handle like functionality here
-                console.log("Liked!");
-              });
-            });
-          });
-        </script>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="feed-card-component">
+              <div class="card">
+                <img class="card-img-top" src="/path/to/image.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Card text</p>
+                  <div class="social-icons">
+                    <span class="like-icon"><i class="fas fa-heart"></i></span>
+                    <span class="save-icon"><i class="fas fa-bookmark"></i></span>
+                    <span class="share-icon"><i class="fas fa-share"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-sm-4">
+            <div class="feed-card-component">
+              <div class="card">
+                <img class="card-img-top" src="/path/to/image.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Card text</p>
+                  <div class="social-icons">
+                    <span class="like-icon"><i class="fas fa-heart"></i></span>
+                    <span class="save-icon"><i class="fas fa-bookmark"></i></span>
+                    <span class="share-icon"><i class="fas fa-share"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-sm-4">
+            <div class="feed-card-component">
+              <div class="card">
+                <img class="card-img-top" src="/path/to/image.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Card text</p>
+                  <div class="social-icons">
+                    <span class="like-icon"><i class="fas fa-heart"></i></span>
+                    <span class="save-icon"><i class="fas fa-bookmark"></i></span>
+                    <span class="share-icon"><i class="fas fa-share"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="/_pages/_JS_scripts/explore.js"></script>
+      <script src="/_pages/_JS_scripts/explore.js"></script>
+
 
       <ul>
         <li>Forums: Our forums are a space where you can ask questions, share your knowledge, and connect with other

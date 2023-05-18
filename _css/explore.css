@@ -1,17 +1,38 @@
+/* Card Component Styling */
+.card {
+    width: 18rem;
+    margin: 10px;
+    transition: transform 0.3s;
+}
 
-h3{
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Heading Styles */
+h3 {
     text-align: center;
-    padding:40px;
+    padding: 40px;
     font-family: 'Questrial', sans-serif;
     font-style: normal;
-
 }
 
 h1 {
-    /* position: absolute; */
-    padding:20px;
-    /* width: 474.12px;
-    height: 67px; */
+    padding: 20px;
     font-family: 'Questrial', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -20,44 +41,36 @@ h1 {
     letter-spacing: -2px;
     color: #121212;
     text-align: center;
-  }
+}
 
+/* Story Container Styling */
 .story-container {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     padding: 30px;
-    /* margin-left: 120px; */
     align-items: center;
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-  }
+    scroll-behavior: smooth;
+}
 
-  /* .story-item {
-    flex: auto;
-    width: 100px;
-    scroll-snap-align: start;
-    align-items: center;
-    text-align: center;
-
-  /* } */ 
 .story-container {
     display: table;
     margin: 0 auto;
-  }
+}
 
 .story-row {
     display: table-row;
-  }
+}
 
 .story-item {
     display: table-cell;
     padding: 10px;
-  }
+}
 
 .item-content {
     position: relative;
     overflow: hidden;
-  }
+}
 
 .story-item img {
     width: 80px;
@@ -68,7 +81,7 @@ h1 {
     background-size: cover;
     background-position: center;
     transition: transform 0.3s ease;
-  }
+}
 
 .story-item-username {
     font-size: 12px;
@@ -78,23 +91,19 @@ h1 {
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
+}
 
 .item-content:hover img {
     transform: scale(1.1);
-  }
+}
 
 .item-content:hover .story-item-username {
     opacity: 1;
-  }
-
-
+}
 
 /* Navigation Styling */
 
 /* CSS for the navigation bar */
-/* CSS for the navigation bar */
-
 nav {
     display: flex;
     justify-content: space-around;
