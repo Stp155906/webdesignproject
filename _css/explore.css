@@ -3,7 +3,7 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     padding-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 120px;
     scroll-behavior: smooth; /* Enable smooth scrolling */
   }
   
