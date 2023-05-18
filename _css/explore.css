@@ -33,7 +33,7 @@ h1 {
   }
   
   .story-item {
-    flex: 0 0 auto;
+    flex: auto;
     width: 100px;
     scroll-snap-align: start;
     /* margin-right: 10px; */
