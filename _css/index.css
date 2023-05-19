@@ -1,24 +1,26 @@
+/* Table Styles */
 table {
-      width: 100%;
-      border-collapse: collapse;
-      border: none;
-    }
-    tr{
-        border:none;
-    }
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
 
-    td {
-      padding: 10px;
-      border: none;
-    }
+tr {
+    border: none;
+}
 
-    /* Target only the image within the table of the footer */
-    table.footer-table img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border: none;
-    }
+td {
+    padding: 10px;
+    border: none;
+}
+
+/* Target only the image within the table of the footer */
+table.footer-table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: none;
+}
 
 /* Style for the hero image container */
 .hero-container {
@@ -28,14 +30,14 @@ table {
     /* width: 1056px; */
 
     /* overflow: hidden; */
-    overflow:auto;
+    overflow: auto;
     padding: 20px;
     border-radius: 10px;
-  }
-  
+}
+
 .hero-image {
     position: absolute;
-    
+
     width: 449px;
     height: 549px;
     mix-blend-mode: normal;
@@ -44,15 +46,15 @@ table {
     background: url(/_images/figmaMain.png);
     background-size: cover;
     background-position: center;
-    
+
     margin-left: 80px;
     margin-top: 80px;
     /* object-fit: cover; */
     /* z-index: -1; */
-  }
-  
-  
-  /* Style for the hero image overlay */
+}
+
+
+/* Style for the hero image overlay */
 .hero-overlay {
     position: absolute;
     width: 474px;
@@ -64,29 +66,32 @@ table {
     padding: 30px;
     margin-left: 30px;
     margin-top: 30px;
-  }
-  
-  /* Style for the hero text container */
+}
+
+/* Style for the hero text container */
 .hero-text {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 50%; /* Adjust to your liking */
-    padding: 20px; /* Adjust to your liking */
-    background-color: #fff; /* Use any color you like */
-    
+    width: 50%;
+    /* Adjust to your liking */
+    padding: 20px;
+    /* Adjust to your liking */
+    background-color: #fff;
+    /* Use any color you like */
+
     font-family: 'Rhodium Libre';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 43px;
 
-  }
-  
-  h1 {
+}
+
+h1 {
     /* position: absolute; */
-    padding:10px;
+    padding: 10px;
     /* width: 474.12px;
     height: 67px; */
     font-family: 'Questrial', sans-serif;
@@ -96,19 +101,20 @@ table {
     line-height: 95px;
     letter-spacing: -2px;
     color: #121212;
-  }
-  
+}
 
-  .card-container {
+
+.card-container {
     display: flex;
     margin-bottom: 30px;
     padding: 20px;
     flex-wrap: nowrap;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+    /* for smooth scrolling on iOS */
 }
 
-  .card {
+.card {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -118,12 +124,12 @@ table {
 
 .card .card-img-top {
 
-        width: 100%;
-        object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card .card-img-overlay {
-    position:relative;
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -289,7 +295,8 @@ header {
 
 .footer-table {
     border: none;
-  }
+}
+
 /* Description Container Styling */
 .container-description {
     padding: 30px;
@@ -339,22 +346,22 @@ header {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
+}
 
-  #blend .bg-container .bg-image {
+#blend .bg-container .bg-image {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-  }
+}
 
-  #blend .bg-container .bg-image img {
+#blend .bg-container .bg-image img {
     object-fit: cover;
     height: 100%;
     width: 100%;
     opacity: 0.7;
-  }
+}
 
 
 
@@ -362,6 +369,7 @@ header {
 
 /* CSS for tablet devices */
 @media (min-width: 768px) and (max-width: 991px) {
+
     /* Resize hero image */
     .hero-image {
         position: absolute;
@@ -379,9 +387,9 @@ header {
         margin-top: 60px;
         /* object-fit: cover; */
         /* z-index: -1; */
-      }
+    }
 
-      /* Style for the hero image overlay */
+    /* Style for the hero image overlay */
     .hero-overlay {
         position: absolute;
         width: 274px;
@@ -393,39 +401,39 @@ header {
         padding: 30px;
         margin-left: 30px;
         margin-top: 30px;
-      }
-  
+    }
+
     /* Resize hero text container */
     .hero-text {
         text-align: center;
-        
-      }
-      
-      .hero-text h1 {
+
+    }
+
+    .hero-text h1 {
         font-size: 24px;
-      }
-      
-      .hero-text p {
+    }
+
+    .hero-text p {
         font-size: 16px;
-      }
-  
+    }
+
     /* Resize card container */
     .card-container {
         flex-wrap: wrap;
         justify-content: center;
     }
-  
+
     /* Resize cards */
     .card {
         flex: 0 0 calc(33.3333% - 20px);
         margin: 10px;
     }
-  
+
     /* Remove margin-right on last card in each row */
     .card-container .card:nth-child(3n+3) {
         margin-right: 0;
     }
-  
+
     /* Resize card image */
     .card .card-img-top {
         height: 250px;
@@ -441,6 +449,7 @@ header {
 /*----------------------------------*/
 /* CSS for mobile devices */
 @media (max-width: 767px) {
+
     /* Resize hero image */
     .hero-image {
         position: absolute;
@@ -458,9 +467,9 @@ header {
         margin-top: 60px;
         /* object-fit: cover; */
         /* z-index: -1; */
-      }
+    }
 
-      /* Style for the hero image overlay */
+    /* Style for the hero image overlay */
     .hero-overlay {
         position: absolute;
         width: 274px;
@@ -472,42 +481,41 @@ header {
         padding: 30px;
         margin-left: 30px;
         margin-top: 30px;
-      }
+    }
 
     /* Resize hero text container */
     .hero-text {
-        text-align:end;
+        text-align: end;
         position: relative;
-      }
-      
-      .hero-text h1 {
+    }
+
+    .hero-text h1 {
         font-size: 24px;
-      }
-      
-      .hero-text p {
+    }
+
+    .hero-text p {
         font-size: 16px;
-      }
-  
+    }
+
     /* Resize card container */
     .card-container {
         flex-wrap: wrap;
         justify-content: center;
     }
-  
+
     /* Resize cards */
     .card {
         flex: 0 0 calc(50% - 20px);
         margin: 10px;
     }
-  
+
     /* Remove margin-right on last card in each row */
     .card-container .card:nth-child(2n+2) {
         margin-right: 0;
     }
-  
+
     /* Resize card image */
     .card .card-img-top {
         height: 200px;
     }
 }
-
