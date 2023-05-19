@@ -229,9 +229,11 @@ nav {
 
 /* CSS for the form element */
 form {
-    margin: 20px 0;
+    margin: 20px;
     padding: 10px;
     border: 1px solid #ccc;
+    align-items: center;
+    border-radius: 10px;
 }
 
 /* CSS for the submit button */
@@ -239,9 +241,10 @@ button[type="submit"] {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    margin:20px;
 }
 
 
