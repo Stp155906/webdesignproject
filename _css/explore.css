@@ -1,3 +1,7 @@
+
+
+
+
 /* Card Component Styling */
 .card {
     width: 18rem;
@@ -25,25 +29,7 @@
     justify-content: space-between;
 }
 
-/* Heading Styles */
-h3 {
-    text-align: center;
-    padding: 40px;
-    font-family: 'Questrial', sans-serif;
-    font-style: normal;
-}
 
-h1 {
-    padding: 20px;
-    font-family: 'Questrial', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 65px;
-    line-height: 95px;
-    letter-spacing: -2px;
-    color: #121212;
-    text-align: center;
-}
 
 /* Story Container Styling */
 .story-container {
@@ -102,8 +88,32 @@ h1 {
 .item-content:hover .story-item-username {
     opacity: 1;
 }
+/* Heading Styles */
+h3 {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+}
 
+h1 {
+    padding: 20px;
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 65px;
+    line-height: 95px;
+    letter-spacing: -2px;
+    color: #121212;
+    text-align: center;
+}
 /* Navigation Styling */
+
+
+
+
+
+
 
 /* CSS for the navigation bar */
 nav {
@@ -133,3 +143,6 @@ nav a:hover {
     background-color: #ddd;
     color: #000;
 }
+
+
+

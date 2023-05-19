@@ -1,3 +1,8 @@
+
+.footer-table {
+    border: none;
+}
+
 /* Table Styles */
 table {
     width: 100%;
@@ -303,9 +308,6 @@ header {
 }
 
 
-.footer-table {
-    border: none;
-}
 
 /* Description Container Styling */
 .container-description {
