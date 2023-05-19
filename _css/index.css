@@ -301,10 +301,10 @@ header {
 }
 
 /* Footer Styling */
-footer {
-    background-color: #f2f2f2;
-}
 
+.footer-table {
+    border: none;
+  }
 /* Description Container Styling */
 .container-description {
     padding: 30px;
