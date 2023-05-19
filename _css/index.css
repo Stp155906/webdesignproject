@@ -274,20 +274,6 @@ nav a:hover {
 
 
 
-/* Table Styling */
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-}
-
-th,
-td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ccc;
-}
 
 /* Header Styling */
 header {
@@ -300,7 +286,6 @@ header {
     background-image: url("about-background.jpg");
 }
 
-/* Footer Styling */
 
 .footer-table {
     border: none;
@@ -323,11 +308,11 @@ header {
     margin: 20px;
 }
 
-footer{
+/* footer{
     padding: 20px;
     background: linear-gradient(180deg, #9FDACF 0%, rgba(230, 238, 237, 0.44) 100%);
 
-}
+} */
 /* About Page Styling */
 #about.bg-container {
     position: relative;
