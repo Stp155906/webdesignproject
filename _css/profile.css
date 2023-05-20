@@ -500,3 +500,19 @@ footer {
     overflow: hidden;
     padding: 20px;
 }
+
+
+/* CSS for a flexible row layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+/* CSS for a 3-column grid layout for medium screens */
+.col-md-4 {
+    flex: 0 0 32%;
+    margin-bottom: 2%;
+}
